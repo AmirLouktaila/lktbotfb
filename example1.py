@@ -35,7 +35,7 @@ def mychat_fun(chat_me):
         time.sleep(20)
 
 '''    )
-#Host must be set "None
+
 create.getHost('38fe-105-108-152-194.ngrok-free.app')
 create.chatBot('chat_me','reply','mychat_fun')
 create.runbot()
