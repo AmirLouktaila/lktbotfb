@@ -13,8 +13,8 @@ create.tokenFb(
     "YOR_TOKEN_PAGE",
     "123456",)
 #here add any code for event
-create.event(
-''' 
+create.event("""
+
 def mychat_fun(chat_me):
     import openai
     openai.api_key = "YOR_KEY"
@@ -39,7 +39,7 @@ def mychat_fun(chat_me):
     if 'error' in status.json() and 'code' in status.json()['error'] and status.json()['error']['code'] == 429:
         time.sleep(20)
 
-'''    )
+""")
 
 create.getHost('38fe-105-108-152-194.ngrok-free.app')
 create.chatBot('chat_me','reply','mychat_fun')
