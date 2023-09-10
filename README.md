@@ -1,6 +1,6 @@
 # lktbotfb
-<code>
 Copy code
+<code>
 pip install lktbotfb
 </code>
 
