@@ -1,12 +1,11 @@
 # lktbotfb
-Copy code
+
 <code>
 pip install lktbotfb
 </code>
 
 #Exampel code
-Copy code
-''' 
+<code>
 from botfb import *
 #When you modify a project, you must call the modify function, otherwise it will not be modified
 edit=EditBot('mybot')
@@ -17,7 +16,7 @@ create.tokenFb(
     "YOR_TOKEN_PAGE",
     "123456",)
 #here add any code for event
-create.event(
+create.event('''
 
 def mychat_fun(chat_me):
     import openai
@@ -43,8 +42,8 @@ def mychat_fun(chat_me):
     if 'error' in status.json() and 'code' in status.json()['error'] and status.json()['error']['code'] == 429:
         time.sleep(20)
 
-   )
+   ''')
 
 create.getHost('38fe-105-108-152-194.ngrok-free.app')
 create.chatBot('chat_me','reply','mychat_fun')
-create.runbot()''')
+create.runbot()</code>
